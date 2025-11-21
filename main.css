@@ -1,0 +1,132 @@
+/* Font tổng thể */
+body {
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8f5; /* nền sáng xanh nhạt */
+    color: #333;
+}
+
+/* Header */
+.c-header {
+    background-color: #4caf50; /* xanh lá dịu */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.c-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.c-header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.c-header nav ul li {
+    margin: 0 15px;
+}
+
+.c-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.c-header nav ul li a:hover {
+    color: #d4ffb8; /* highlight xanh nhạt khi hover */
+}
+
+/* Body layout */
+.c-body {
+    display: flex;
+    min-height: 70vh;
+}
+
+/* Sidebar */
+.c-sidebar {
+    width: 220px;
+    background-color: #e6f2ea; /* xanh lá nhạt dịu mắt */
+    padding: 20px;
+}
+
+.c-sidebar .c-item {
+    margin-bottom: 15px;
+}
+
+.c-sidebar .c-item a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.c-sidebar .c-item a:hover {
+    background-color: #d4f1c5; /* hover nhạt hơn */
+}
+
+/* Content */
+.c-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.c-content h2 {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.c-content p, .c-content ul, .c-content ol {
+    line-height: 1.6;
+}
+
+/* Footer */
+.c-footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Splash screen */
+#splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a8e6a1; /* xanh lá dịu mắt */
+    color: #fff;
+    text-align: center;
+}
+
+#splash-screen h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#splash-screen button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#splash-screen button:hover {
+    background-color: #3e8e41;
+}

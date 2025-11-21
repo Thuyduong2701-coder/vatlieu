@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chào mừng buổi thuyết trình InSb</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Splash screen -->
+    <div id="splash-screen">
+        <h1>Chào mừng thầy và các bạn đến với buổi thuyết trình về InSb!</h1>
+        <button id="enter-btn">Bắt đầu</button>
+    </div>
+
+    <!-- Nội dung chính (homepage) -->
+    <div id="homepage" style="display:none;">
+        <header class="c-header">
+            <h1>Welcome to bài thuyết trình về InSb</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="https://ahaslides.com/vi/" target="_blank">Minigame</a></li>
+                    <li><a href="#mindmap">Sơ đồ tư duy</a></li>
+                    <li><a href="thanh_vien.html">Thành viên</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="c-body">
+            <div class="c-sidebar">
+                <div class="c-item"><a href="#infor">Mục lục</a></div>
+                <div class="c-item"><a href="#material">Giới thiệu vật liệu</a></div>
+                <div class="c-item"><a href="#properties">Tính chất</a></div>
+                <div class="c-item"><a href="#applications">Ứng dụng</a></div>
+                <div class="c-item"><a href="#conclusion">Kết luận</a></div>
+            </div>
+
+            <div class="c-content">
+
+                <!-- TRANG CHỦ - HIỂN THỊ MẶC ĐỊNH -->
+                <section id="home" style="display:block;">
+                    <h2>Chào mừng đến với buổi thuyết trình về InSb</h2>
+                    <p>Chúng em xin gửi lời chào đến thầy và toàn thể các bạn! Đây là phần mở đầu của bài thuyết trình, nơi giới thiệu tổng quan về nội dung chính và những điểm đặc biệt mà nhóm sẽ trình bày ngày hôm nay.</p>
+
+                    <p><strong>Không thể bỏ qua là phần Minigame!</strong></p>
+
+                    <p>Đây là phần kiểm tra kiến thức bắt buộc dành cho cả lớp, gồm <strong>5 câu trắc nghiệm cực kỳ đơn giản</strong> về InSb. Ai có điểm số cao nhất sẽ nhận được 
+                    <strong>1 phần thưởng đặc biệt</strong>.</p>
+
+                    <p>Vì vậy, thầy và các bạn hãy chú ý theo dõi bài thuyết trình nhé!</p>
+                </section>
+
+                <!-- SECTION KHÁC (tạm để trống – bạn thêm sau) -->
+                <section id="mindmap" style="display:none;">
+                    <h2>Sơ đồ tư duy</h2>
+                    <p>(Bạn có thể chèn hình hoặc HTML của Mindmap tại đây)</p>
+                </section>
+
+                <section id="material" style="display:none;">
+                    <h2>Giới thiệu về vật liệu InSb</h2>
+                    <p>InSb là một hợp chất bán dẫn nhóm III-V có đặc tính điện tử và quang học đặc biệt.</p>
+                </section>
+
+                <section id="properties" style="display:none;">
+                    <h2>Tính chất của vật liệu</h2>
+                    <ul>
+                        <li>Độ dẫn điện cao</li>
+                        <li>Chiều rộng vùng cấm nhỏ</li>
+                        <li>Độ linh động electron lớn</li>
+                    </ul>
+                </section>
+
+                <section id="applications" style="display:none;">
+                    <h2>Ứng dụng của vật liệu</h2>
+                    <p>InSb được sử dụng trong cảm biến hồng ngoại, điện tử tốc độ cao và linh kiện quang điện tử.</p>
+                </section>
+
+                <section id="conclusion" style="display:none;">
+                    <h2>Kết luận</h2>
+                    <p>InSb là vật liệu bán dẫn quan trọng với nhiều ứng dụng hiện đại và tiềm năng phát triển mạnh.</p>
+                </section>
+
+            </div>
+        </div>
+
+        <footer class="c-footer">
+            Bản quyền © 2025 Nhóm 3
+        </footer>
+    </div>
+
+<script>
+    // Khi nhấn nút "Bắt đầu", ẩn splash screen và hiện homepage
+    document.getElementById('enter-btn').addEventListener('click', function() {
+        document.getElementById('splash-screen').style.display = 'none';
+        document.getElementById('homepage').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
